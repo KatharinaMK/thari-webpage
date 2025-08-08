@@ -1,8 +1,20 @@
-# thari-webpage (www.thari-klostermann.com)
-# A personal website for Thari - developed using HTML, CSS, and JavaScript. Contains information, images, and contact details.
+# Project 
+thari-webpage (www.thari-klostermann.com)
 
-# de.html
-# de.css
+## Description
+A personal website for Thari - developed using HTML, CSS, and JavaScript. Contains information, images, and contact details.
 
-# Autorin
-[@KatharinaMK](https://github.com/KatharinaMK)
+## Layout
+- button-pages
+- en
+- login-register
+- nav-pages
+- images
+- de.html
+- de.css
+
+## Pictures 
+- unsplash.com
+
+## Author
+- [@KatharinaMK](https://github.com/KatharinaMK)
