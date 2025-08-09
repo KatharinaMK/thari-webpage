@@ -159,6 +159,12 @@ a {
     text-decoration: none;
     font-size: var(--text-base);
     display: inline-block;
+    transition: transform 0.8s ease;
+}
+
+a:hover {
+    font-weight: 700;
+    transform: scale(1.1);
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -186,8 +192,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
-    text-align: center;
+
 }
 
 .btn-primary:link, .btn-primary:visited {
@@ -314,8 +319,27 @@ ul {
 
 .nav-btn-container {
     display: flex;
-    margin-right: auto;
-    margin-left: 1rem;
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+.nav-line {
+    padding: 2rem;
+    font-size: var(--text-base);
+}
+
+.active {
+    font-weight: 700;
+}
+
+.nav-btn {
+    padding: 2rem;
+    font-size: var(--text-base);
+}
+
+.nav-btn:hover {
+    background-color: var(--grey-light);
+    border-color: var(--grey-dark);
 }
 
 .nav-login-register-container {
@@ -527,6 +551,7 @@ ul {
     justify-content: space-between;
     margin-bottom: 2.5rem;
     border-top: 1px solid #000000;
+    padding: 0 1rem;
 }
 
 .footer-thari {
@@ -577,7 +602,6 @@ ul {
   position: absolute;
   bottom: -340%;
   left: -250%;
-  font-family: var(--font-family);
   transform: translateX(-50%);
   background-color: black;
   color: white;
