@@ -441,6 +441,14 @@ ul {
     margin: 1rem 0;
 }
 
+.hero-btn-container-learn-more {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
 .Startseite-img-container {
     display: flex;
     justify-content: center;
@@ -517,17 +525,43 @@ ul {
 
 .features-grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     row-gap: 15rem;
-    column-gap: 5rem;
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
+    column-gap: 5rem;
+    margin: 75px 75px 100px;
+}
+
+.features-grid-container-learn-more {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 75px 75px 100px;
 }
 
 .feature-text {
     max-width: 350px;
     width: 100%;
+}
+
+.feature-text-learn-more {
+    max-width: 350px;
+    width: 100%;
+    padding: 2rem 2rem;
+    margin: 50px 50px;
+    justify-content: center;
+    border: 2px dotted black;
+}
+
+.feature-text-learn-more-thari {
+    max-width: 1000px;
+    width: 100%;
+    padding: 2rem 2rem;
+    margin: 50px 50px;
+    border: 2px dotted black;
+    grid-column: 1/4;
+    text-align: center;
 }
 
 .feature-headings {
