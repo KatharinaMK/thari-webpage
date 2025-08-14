@@ -26,16 +26,31 @@
     margin-bottom: 20px;
 }
 
-/* Inputs */
 .login-form input[type=text],
 .login-form input[type=password],
-.login-form textarea {
+.login-form textarea,
+.login-form select {
     font-family: var(--font-family);
     width: 100%;
     padding: 12px 20px;
     margin: 10px 0;
     border: 1px solid #ccc;
     box-sizing: border-box;
+}
+
+.form-option {
+    font-family: var(--font-family);
+    color:#757575;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.login-form select option {
+    font-family: var(--font-family);
 }
 
 .login-register-form-buttons {
