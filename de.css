@@ -171,6 +171,13 @@ a:link, a:visited, a:hover, a:active {
     color: var(--grey-base);
 }
 
+button:link, button:visited, button:hover, button:active {
+    color: var(--white);
+    background-color: var(--black);
+    border: 2px dotted var(--black);
+    transition: 0.5s;
+}
+
 ul {
     list-style: none;
 }
@@ -189,6 +196,14 @@ ul {
     justify-content: center;
     align-items: center;
 
+}
+
+.btn-learn-more {
+    padding: 1rem 2rem;
+    font-size: var(--text-base);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-primary:link, .btn-primary:visited {
@@ -523,13 +538,17 @@ ul {
     flex-direction: column;
 }
 
+.features-section-nav-button-pages {
+    display: flex;
+    justify-content: center;
+}
+
 .features-grid-container {
     display: grid;
-    row-gap: 15rem;
+    /* row-gap: 15rem; */
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
-    column-gap: 5rem;
     margin: 75px 75px 100px;
 }
 
@@ -537,6 +556,15 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 75px 75px 100px;
+}
+
+.features-grid-container-about-me {
+    display: flex;
+    row-gap: 5rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
     margin: 75px 75px 100px;
 }
 
@@ -564,8 +592,23 @@ ul {
     text-align: center;
 }
 
+.feature-text-about-me {
+    max-width: 600px;
+    width: 100%;
+    gap: 2rem;
+    padding: 2rem 2rem;
+    margin: 0px 80px;
+    justify-content: center;
+}
+
 .feature-headings {
     margin-bottom: 5rem;
+}
+
+.nav-img {
+    max-width: 57.54rem;
+    width: 100%;
+    transition: transform 0.8s ease;
 }
 
 .feature-img {

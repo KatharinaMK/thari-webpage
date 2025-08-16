@@ -6,18 +6,29 @@
     padding: 50px 20px;
 }
 
+.blog-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
 /* Bordered form */
 .login-form {
     border: 3px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: stretch;
     max-width: 600px;
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
     background: white;
+}
+
+.blog-form {
+    border: 0px;
+    padding: 0px;
+    max-width: 100%;
 }
 
 /* Header vom Login */
@@ -70,6 +81,15 @@
     margin: 2px 0;
     border: none;
     width: 100%;
+}
+
+.blog-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 1/4;
+    width: 100%;
+    gap: 1rem;
 }
 
 /* Passwort-Link */
