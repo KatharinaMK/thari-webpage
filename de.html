@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="de.css">
+    <link rel="stylesheet" href="queries.css">
     <title>THARI | </title>
 </head>
 <body>
@@ -15,20 +16,19 @@
             <!-- NAVIGATION -->
             <nav class="navbar">
                 <div class="logo">
-                    <a href="de.html" id="Logo-Startseite-Link">TH<span class="art-color">A</span><span class="rebel-color">R</span>I | </a> 
-                    <!-- Senkrechter Strich professioneller -->
+                    <a href="de.html" id="Logo-Startseite-Link">TH<span class="art-color">A</span><span class="rebel-color">R</span>I&nbsp;|</a> 
                 </div>
-                
+
                 <ul class="nav-btn-container">
                     <p class="nav-line">|</p>
-                    <li><a class="nav-btn" href="nav-pages/about-me.html">Über mich</a></li>
+                    <li><a class="nav-btn" href="nav-pages/about-me.html">Über&nbsp;mich</a></li>
                     <li><a class="nav-btn" href="nav-pages/contact.html">Kontakt</a></li>
                     <li><a class="nav-btn" href="nav-pages/services.html">Leistungen</a></li>
                     <li><a class="nav-btn" href="nav-pages/projects.html">Projekte</a></li>
                     <li><a class="nav-btn" href="nav-pages/blog.html">Blog</a></li>
                     <li><a class="nav-btn" href="nav-pages/feedback.html">Bemerkungen</a></li>
                     <p class="nav-line">|</p>
-                    <li class="dropdown">
+                    <!-- <li class="dropdown">
                         <a class="nav-btn" href="#"><img class="nav-icons" src="images/svg/arrow-down-outline.svg" alt="arrow-down"></a>
                         <ul class="dropdown-content">
                             <li><a href="#">Über mich</a></li>
@@ -38,8 +38,10 @@
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Bemerkungen</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                 </ul>
+
+                <button class="nav-toggle"><img class="nav-icons" src="images/svg/menu-outline.svg" alt="nav"></button>
 
                 <ul class="nav-login-register-container">
                     <li><a class="btn btn-primary-outline" href="login-register/login.html" id="login-link">Anmelden</a></li>
@@ -55,10 +57,13 @@
             <!-- HERO SECTION -->
             <section class="hero-section">
                 <div class="hero-content">
-                    <h1 class="hero-heading">
-                        | TECH | HELP | <span class="art-color">ART</span> | <br> 
-                        | <span class="rebel-color">REBEL</span> | INTEGRITY | 
-                    </h1>
+                    <div class="hero-heading">
+                        <h1>
+                            |&nbsp;TECH&nbsp;|&nbsp;HELP&nbsp;|&nbsp;<span class="art-color">ART</span>&nbsp;|
+                            <br class="hero-heading-break">
+                            |&nbsp;<span class="rebel-color">REBEL</span>&nbsp;|&nbsp;INTEGRITY&nbsp;|
+                        </h1>
+                    </div>
                     <p class="hero-paragraph">Subheading that sets up context, shares more info about the website, or generally gets people psyched to keep scrolling</p>
                 
                     <ul class="hero-btn-container">
@@ -84,26 +89,35 @@
             <!-- FEATURE SECTION -->
             <section class="features-section">
                 <div class="features-grid-container">
-                    <div class="feature-text">
-                        <h4>TECH | </h4>
-                        <h5 class="feature-heading">Webentwicklung</h5>
-                        <p>Unlock the simplicity of online journaling - say goodbye to the hassle of pen and paper and hello to effortless journaling with just a few clicks.</p>
-                        <h5 class="feature-heading">Datenwissenschaften</h5>
-                        <p>Not just words on a screen - our journals are beautifully displayed and neatly organised.</p>
+                    <div class="feature-item">
+                        <div class="feature-text">
+                            <h4>TECH | </h4>
+                            <h5 class="feature-heading">Webentwicklung</h5>
+                            <p>Unlock the simplicity of online journaling - say goodbye to the hassle of pen and paper and hello to effortless journaling with just a few clicks.</p>
+                            <h5 class="feature-heading">Datenwissenschaften</h5>
+                            <p>Not just words on a screen - our journals are beautifully displayed and neatly organised.</p>
+                        </div>
+                        <img class="feature-img" src="images/home/Startseite_Rays.jpg" alt="Rays">
                     </div>
-                    <img class="feature-img" src="images/home/Startseite_Rays.jpg" alt="Rays">
-                    <div class="feature-text">
-                        <h4>HELP | </h4>
-                        <h5 class="feature-heading">Bildung</h5>
-                        <p>Unlock the simplicity of online journaling - say goodbye to the hassle of pen and paper and hello to effortless journaling with just a few clicks.</p>
+
+                    <div class="feature-item">
+                        <div class="feature-text">
+                            <h4>HELP | </h4>
+                            <h5 class="feature-heading">Bildung</h5>
+                            <p>Unlock the simplicity of online journaling - say goodbye to the hassle of pen and paper and hello to effortless journaling with just a few clicks.</p>
+                        </div>
+                        <img class="feature-img feature-img-swap-order" src="images/home/Startseite_Quallen.jpg" alt="Quallen">
                     </div>
-                    <img class="feature-img feature-img-swap-order" src="images/home/Startseite_Quallen.jpg" alt="Quallen">
-                    <div class="feature-text">
-                        <h4>ART | </h4>
-                        <h5 class="feature-heading">Kunst</h5>
-                        <p>Unlock the simplicity of online journaling - say goodbye to the hassle of pen and paper and hello to effortless journaling with just a few clicks.</p>
-                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-text">
+                            <h4>ART | </h4>
+                            <h5 class="feature-heading">Kunst</h5>
+                            <p>Unlock the simplicity of online journaling - say goodbye to the hassle of pen and paper and hello to effortless journaling with just a few clicks.</p>
+                        </div>
                     <img class="feature-img" src="images/home/jene-stephaniuk--MCrF6hnojU-unsplash.jpg" alt="Art">
+                    </div>
+
                 </div>
             </section>
 

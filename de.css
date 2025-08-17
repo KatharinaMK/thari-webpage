@@ -105,8 +105,8 @@ Black: #000000 (Black)
 }
 
 html {
-   font-size: 62.5%; 
-   /* 10px / 16px = 62.5% */
+    font-size: 62.5%; 
+    /* 10px / 16px = 62.5% */
 }
 
 body {
@@ -117,11 +117,14 @@ body {
 }
 
 .container {
-    max-width: 95%;
-    width: 100%;
+    max-width: 2000px;
+    width: 95%;
     margin: 0 auto;
     padding: 0 1rem;
     box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
 }
 
 h1, h2, h3, h4, h5 {
@@ -169,6 +172,12 @@ a:hover {
 
 a:link, a:visited, a:hover, a:active {
     color: var(--grey-base);
+}
+
+button {
+    color: none;
+    background: none;
+    border: none;
 }
 
 button:link, button:visited, button:hover, button:active {
@@ -319,9 +328,11 @@ ul {
 .navbar {
     height: var(--nav-height);
     display: flex;
+    justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #000000;
     padding: 0 1rem;
+    /* overflow-x: auto; macht Sinn wenn man scrollen möchte */
 }
 
 .logo {
@@ -331,11 +342,12 @@ ul {
 .nav-btn-container {
     display: flex;
     margin-left: auto;
-    margin-right: 2rem;
+    /* margin-right: 2rem; */
 }
 
 .nav-line {
     padding: 2rem;
+    width: 100%;
     font-size: var(--text-base);
 }
 
@@ -399,6 +411,15 @@ ul {
     align-items: center;
 }
 
+/* Hamburger verstecken am Desktop */
+.nav-toggle {
+    /* display: none; */
+    font-size: 28px;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-content: left;
+}
+
 /* ------ HERO SECTION ------ */
 
 .hero-section {
@@ -408,10 +429,11 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: left;
+    align-items: center;
+    align-content: center;
+    position: relative;
     gap: clamp(1rem, 6vw, 8rem);
     border-bottom: 1px solid #000000;
-    position: relative;
 }
 
 .hero-content {
@@ -544,19 +566,32 @@ ul {
 }
 
 .features-grid-container {
-    display: grid;
-    /* row-gap: 15rem; */
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    display: flex;
+    row-gap: 15rem;
+    flex-wrap: wrap;
     align-items: center;
-    margin: 75px 75px 100px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.feature-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.feature-img-swap-order {
+    order: -1;
 }
 
 .features-grid-container-learn-more {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 75px 75px 100px;
+    margin-bottom: 100px;
 }
 
 .features-grid-container-about-me {
@@ -565,7 +600,7 @@ ul {
     justify-content: center;
     justify-items: center;
     align-items: center;
-    margin: 75px 75px 100px;
+    margin-bottom: 100px;
 }
 
 .feature-text {
@@ -622,11 +657,6 @@ ul {
     transform: scale(1.15) scaleX(-1);
 }
 
-.feature-img-swap-order {
-    grid-row: 2/3;
-    grid-column: 1/2;
-}
-
 /* ------ CTA SECTION ------ */
 
 .cta-section {
@@ -651,13 +681,15 @@ ul {
 /* ------ FOOTER ------ */
 
 .footer {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 1rem;
+    align-items: center;
     justify-content: space-between;
     margin-bottom: 2.5rem;
     border-top: 1px solid #000000;
     padding: 0 1rem;
+    max-width: 100%;
 }
 
 .footer-thari {
@@ -674,6 +706,7 @@ ul {
 
 .social-icons-container {
     display: flex;
+    margin-top: 1rem;
     gap: 1.5rem;
 }
 
@@ -688,6 +721,8 @@ ul {
 }
 
 .small-text-footer {
+    width: 100%;
+    text-align: center;
     margin: auto;
     margin-bottom: 1.5rem;
 }
