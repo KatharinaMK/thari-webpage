@@ -592,6 +592,7 @@ ul {
 .features-section-nav-button-pages {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .features-grid-container {
@@ -617,10 +618,29 @@ ul {
 }
 
 .features-grid-container-learn-more {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5rem;
     justify-content: center;
-    margin-bottom: 100px;
+    justify-items: center;
+    margin: 10rem 10rem;
+}
+
+.feature-text-learn-more-thari {
+    max-width: 100%;
+    padding: 2rem 2rem;
+    border: 2px dotted black;
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.feature-text-learn-more {
+    max-width: 350px;
+    width: 100%;
+    padding: 2rem;
+    border: 2px dotted black;
+    margin: 0;
+    align-items: center;
 }
 
 .features-grid-container-about-me {
@@ -633,9 +653,19 @@ ul {
     padding: 10rem 0;
 }
 
+.feature-text-about-me {
+    max-width: 600px;
+    width: 100%;
+    gap: 2rem;
+    padding: 2rem 2rem;
+    margin: 0px 80px;
+    justify-content: center;
+}
+
 .features-grid-container-blog {
     display: flex;
-    row-gap: 15rem;
+    row-gap: 2rem;
+    max-width: 100%;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -645,34 +675,6 @@ ul {
 .feature-text {
     max-width: 350px;
     width: 100%;
-}
-
-.feature-text-learn-more {
-    max-width: 350px;
-    width: 100%;
-    padding: 2rem 2rem;
-    margin: 50px 50px;
-    justify-content: center;
-    border: 2px dotted black;
-}
-
-.feature-text-learn-more-thari {
-    max-width: 1000px;
-    width: 100%;
-    padding: 2rem 2rem;
-    margin: 50px 50px;
-    border: 2px dotted black;
-    grid-column: 1/4;
-    text-align: center;
-}
-
-.feature-text-about-me {
-    max-width: 600px;
-    width: 100%;
-    gap: 2rem;
-    padding: 2rem 2rem;
-    margin: 0px 80px;
-    justify-content: center;
 }
 
 .feature-headings {
